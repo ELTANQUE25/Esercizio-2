@@ -11,7 +11,7 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo }) {
         </div>
         <span className="text-xs text-gray-500">Creato il {todo.createdAt}</span>
       </div>
-      <Button onClick={() => deleteTodo(todo.id)} variant="secondary">X</Button>
+      <Button className='delete-button' onClick={() => deleteTodo(todo.id)}>X</Button>
     </div>
   )
 }
